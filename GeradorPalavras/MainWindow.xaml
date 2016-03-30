@@ -1,0 +1,18 @@
+﻿<Window x:Class="GeradorPalavras.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeradorPalavras"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="477.143" Width="525">
+    <Grid>
+        <Button x:Name="button" Content="Gerar" Margin="0,201,19,0" VerticalAlignment="Top" Click="button_Click" HorizontalAlignment="Right" Width="75"/>
+        <TextBox x:Name="textBox" Height="134" Margin="37,42,19,0" TextWrapping="Wrap" Text="{}{&#xD;&#xA;&#x9;&quot;Inicio&quot;: &quot;S&quot;,&#xD;&#xA;&#x9;&quot;NaoTerminais&quot;: [ &quot;S&quot;,&quot;N&quot; ],&#xD;&#xA;&#x9;&quot;Terminais&quot;: [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;],&#xD;&#xA;&#x9;&quot;Regras&quot;: [&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;De&quot;:&quot;S&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Para&quot;: [&quot;&quot;]&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;De&quot;:&quot;S&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Para&quot;: [&quot;a&quot;,&quot;S&quot;]&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;De&quot;:&quot;S&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Para&quot;: [&quot;b&quot;,&quot;N&quot;]&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;De&quot;:&quot;N&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Para&quot;: [&quot;c&quot;,&quot;N&quot;]&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;De&quot;:&quot;N&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Para&quot;: [&quot;c&quot;]&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;]&#xD;&#xA;}" VerticalAlignment="Top" />
+        <TextBox x:Name="txtLimite" HorizontalAlignment="Left" Height="23" Margin="37,201,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Definição:" HorizontalAlignment="Left" Margin="37,13,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Limite" HorizontalAlignment="Left" Margin="37,176,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" Margin="37,250,19,20"/>
+
+    </Grid>
+</Window>
